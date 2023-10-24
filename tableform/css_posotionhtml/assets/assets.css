@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head {
+    height: 60px;
+    background-color: rgb(40, 40, 136);
+    width: 100%;
+    cursor: pointer;
+}
+.logo {
+    float: left;
+    box-sizing: border-box;
+    width: 40%;
+    padding-left: 400px;
+}
+.menu1 > li {
+    list-style-type: none;
+    display: inline;
+    line-height: 60px;
+    color: white;
+    padding: 0 10px;
+}
+.menu1 > li > ul {
+    list-style-type: none;
+    display: none;
+}
+.menu1-first-child {
+    position: relative;
+}
+.menu1-first-child .menu1-icon {
+    font-size: 10px;
+}
+.menu2 {
+    position: absolute;
+    top: 43px;
+    left: 10px;
+    background-color: rgb(40, 40, 136);
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+.menu1-first-child:hover .menu2 {
+    display: block;
+}
+.menu2-last-child {
+    position: relative;
+}
+.menu3 {
+    display: none;
+    position: absolute;
+    color: aliceblue;
+    top: -46px;
+    left: 200px;
+    background-color: rgb(40, 40, 136);
+    width: 200px;
+    text-align: center;
+    list-style-type: none;
+    cursor: pointer;
+}
+.menu2-last-child:hover .menu3 {
+    display: block;
+    
+}
+.menu2::after {
+    content: "";
+    display: block;
+    width: 96px;
+    height: 56px;
+    top: -30px;
+    left: -9px;
+    position: absolute;
+}
+.header-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+}
+
+.menu1 >li>ul>li {
+}
